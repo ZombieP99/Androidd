@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_gradient_background"
+    android:gravity="center">
+
+    <!-- Main content container -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <!-- Medical Cross Logo -->
+        <ImageView
+            android:id="@+id/splashLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/medical_cross_icon"
+            android:contentDescription="Medical Cross Logo"
+            android:layout_marginBottom="24dp" />
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/splashAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- App Tagline -->
+        <TextView
+            android:id="@+id/splashTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Healthcare Application"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:alpha="0.9"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Loading indicator -->
+        <ProgressBar
+            android:id="@+id/splashProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/white"
+            style="?android:attr/progressBarStyle" />
+
+    </LinearLayout>
+
+    <!-- Footer text -->
+    <TextView
+        android:id="@+id/splashFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Healthcare &amp; Medical Solutions"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:alpha="0.8" />
+
+</RelativeLayout>
