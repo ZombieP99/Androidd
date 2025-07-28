@@ -1,4 +1,4 @@
-# Android Demo Project - Yousef
+# Android Project - Yousef
 
 A comprehensive Android application demonstrating various Android development concepts and UI components.
 
